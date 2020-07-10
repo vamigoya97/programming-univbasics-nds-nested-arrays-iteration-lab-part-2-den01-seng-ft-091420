@@ -5,13 +5,14 @@ def find_min_in_nested_arrays(src)
   min = []
   while row < src.size do
     column = 0 
-    value = 1000
+    #value = 1000
     while column < src[row].size do
-      if value <= src[row][column]
-        value = 1000
-      else
-        value = src[row][column]
-      end
+      value = src[row][column].min
+     # if value <= src[row][column]
+     #   value = 1000
+     # else
+     #   value = src[row][column]
+     # end
       column += 1
     end
     min << value
