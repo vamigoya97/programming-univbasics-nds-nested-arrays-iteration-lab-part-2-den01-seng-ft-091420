@@ -7,7 +7,7 @@ def find_min_in_nested_arrays(src)
     column = 0 
     #value = 1000
     while column < src[row].size do
-      value = src[row][column].min
+      value = src[row][column].min()
      # if value <= src[row][column]
      #   value = 1000
      # else
